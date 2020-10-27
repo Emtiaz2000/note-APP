@@ -70,11 +70,11 @@ search.addEventListener("input",function(){
     let inputval = search.value.toLowerCase();
     let cardnote = document.getElementsByClassName('card-text');
     Array.from(cardnote).forEach(function(element){
-        let cardtext =element.getElementsByTagName('p'[0]);
+        let cardtext =element.textContent.toLowerCase();
         if(cardtext.includes(inputval)){
-            element.style.display="block";
+            element.parentElement.parentElement.style.display="block";
         }else{
-            element.style.display="none";
+            element.parentElement.parentElement.style.display="none";
     }
 })
 }) 
