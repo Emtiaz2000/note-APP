@@ -65,16 +65,16 @@ function deleteing(index){
 };
 //search the note
 
-/* let search = document.getElementById('search');
+let search = document.getElementById('search');
 search.addEventListener("input",function(){
     let inputval = search.value.toLowerCase();
     let cardnote = document.getElementsByClassName('card-text');
     Array.from(cardnote).forEach(function(element){
         let cardtext =element.getElementsByTagName('p'[0]);
-        if(cardtext.includs(inputval)){
+        if(cardtext.includes(inputval)){
             element.style.display="block";
         }else{
             element.style.display="none";
     }
 })
-}) */
+}) 
